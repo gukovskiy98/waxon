@@ -1,0 +1,34 @@
+@mixin addFont($family, $weight, $style, $src) {
+  @font-face {
+    font-family: $family;
+    src: url($src + ".woff2") format("woff2"),
+      url($src + ".woff") format("woff");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+@include addFont(
+  "Montserrat",
+  200,
+  normal,
+  "../fonts/Montserrat/Montserrat-ExtraLight"
+);
+@include addFont(
+  "Montserrat",
+  300,
+  normal,
+  "../fonts/Montserrat/Montserrat-Light"
+);
+@include addFont(
+  "Montserrat",
+  400,
+  normal,
+  "../fonts/Montserrat/Montserrat-Regular"
+);
+
+@include addFont("Raleway", 400, normal, "../fonts/Raleway/Raleway-Regular");
+@include addFont("Raleway", 500, normal, "../fonts/Raleway/Raleway-Medium");
+@include addFont("Raleway", 700, normal, "../fonts/Raleway/Raleway-Bold");
+
+@include addFont("Roboto", 400, normal, "../fonts/Roboto/Roboto-Regular");

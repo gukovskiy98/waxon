@@ -1,0 +1,20 @@
+@import "normalize";
+
+@import "fonts";
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  display: flex;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
