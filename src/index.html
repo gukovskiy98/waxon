@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>Waxom</title>
   </head>
   <body>
     <!-- TODO: Добавить Babel в GULP -->
+    <!-- ! gulp-webp-html падает, если тег img содержит переводы строки, следовательно нужно убирать все пробелы в img тегах -->
     @@include('_header.html')
     <script src="js/script.min.js"></script>
   </body>

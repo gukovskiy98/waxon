@@ -1,1 +1,50 @@
-<!DOCTYPE html><html lang="en">  <head>    <meta charset="UTF-8" />    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <link rel="stylesheet" href="css/style.min.css"/>    <title>Waxom</title>  </head>  <body>    <!-- TODO: Добавить Babel в GULP -->    <header class="page-header">  <div class="container container--page-header">    <div class="page-header__top">      <a href="#" class="logo">        <span class="logo__img">          <picture><source srcset="img/icons.svg#logos" type="image/webp"><img src="img/icons.svg#logos" class="svg-logos-dims" alt="logo"/></picture>        </span>        <span class="logo__text">          Waxom        </span>      </a>      <nav class="page-nav">        <ul>          <li><a class="link"href="#link1" target="_blank" >Home</a></li>          <li><a class="link"href="#link2" target="_blank">About Us</a></li>          <li><a class="link"href="#link3" target="_blank">Portfolio</a></li>          <li><a class="link"href="#link4" target="_blank">Features</a></li>          <li><a class="link"href="#link5" target="_blank">Blog</a></li>          <li><a class="link"href="#link6" target="_blank">Pricing</a></li>          <li><a class="link"href="#link7" target="_blank">Shortcodes</a></li>          <li><a class="link"href="#link8" target="_blank">Contact</a></li>        </ul>      </nav>      <div class="cart-and-search">        <a href="#cart" class="cart-and-search__cart">          <picture><source srcset="img/icons.svg#icon-cart" type="image/webp"><img src="img/icons.svg#icon-cart" class="cart-and-search__img" alt="icon-cart"/></picture>        </a>        <a href="#search" class="cart-and-search__search">          <picture><source srcset="img/icons.svg#icon-search" type="image/webp"><img src="img/icons.svg#icon-search" class="cart-and-search__img" alt="icon-search"/></picture>        </a>      </div>    </div>    <div class="page-header__bottom">    </div>  </div></header>    <script src="js/script.min.js"></script>  </body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Waxom</title>
+  </head>
+  <body>
+    <!-- TODO: Добавить Babel в GULP -->
+    <!-- ! gulp-webp-html падает, если тег img содержит переводы строки, следовательно нужно убирать все пробелы в img тегах -->
+    <header class="page-header">
+  <div class="container container--page-header">
+    <div class="page-header__top">
+      <a href="#" class="logo">
+        <span class="logo__img">
+          <picture><source srcset="img/icons.svg#logos" type="image/webp"><img src="img/icons.svg#logos" class="svg-logos-dims" alt="logo" /></picture>
+        </span>
+        <span class="logo__text">
+          Waxom
+        </span>
+      </a>
+      <nav class="page-nav">
+        <ul>
+          <li><a class="link" href="#link1" target="_blank">Home</a></li>
+          <li><a class="link" href="#link2" target="_blank">About Us</a></li>
+          <li><a class="link" href="#link3" target="_blank">Portfolio</a></li>
+          <li><a class="link" href="#link4" target="_blank">Features</a></li>
+          <li><a class="link" href="#link5" target="_blank">Blog</a></li>
+          <li><a class="link" href="#link6" target="_blank">Pricing</a></li>
+          <li><a class="link" href="#link7" target="_blank">Shortcodes</a></li>
+          <li><a class="link" href="#link8" target="_blank">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="cart-and-search">
+        <a href="#cart" class="cart-and-search__cart">
+          <picture><source srcset="img/icons.svg#icon-cart" type="image/webp"><img src="img/icons.svg#icon-cart" class="cart-and-search__img" alt="icon-cart" /></picture>
+        </a>
+        <a href="#search" class="cart-and-search__search">
+          <picture><source srcset="img/icons.svg#icon-search" type="image/webp"><img src="img/icons.svg#icon-search" class="cart-and-search__img" alt="icon-search" /></picture>
+        </a>
+      </div>
+    </div>
+    <div class="page-header__bottom"></div>
+  </div>
+</header>
+
+    <script src="js/script.min.js"></script>
+  </body>
+</html>
