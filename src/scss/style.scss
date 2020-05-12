@@ -2,13 +2,31 @@
 
 @import "fonts";
 
+@import "icons-dims";
+
+@import "links";
+
+// Default values
+
+$default-text-color: #fff;
+$second-text-color: #8c8c8c;
+$third-text-color: #555;
+$default-fz: 16px;
+
+$screen-width: 100vw;
+$screen-height: 100vh;
+
 html {
   font-family: "Montserrat", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 body {
   display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 *,
@@ -18,3 +36,23 @@ body {
   margin: 0;
   padding: 0;
 }
+
+img {
+  max-width: 100vw;
+}
+
+a {
+  text-decoration: inherit;
+  font: inherit;
+  color: inherit;
+}
+
+.container {
+  // width: calc(1230/1920*100%);
+  max-width: 90%;
+  margin: 0 calc(30% - 231px);
+}
+
+@import "header";
+@import "main";
+@import "footer";

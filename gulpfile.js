@@ -22,7 +22,7 @@ let path = {
     html: source_folder + "/**/*.html",
     css: source_folder + "/scss/**/*.scss",
     js: source_folder + "/js/**/*.js",
-    img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+    img: source_folder + "/img/**/*.+(jpg|png|svg|gif|ico|webp)",
   },
 
   clean: "./" + project_folder + "/",
@@ -79,7 +79,7 @@ function css() {
         cascade: true,
       })
     )
-    .pipe(webpcss())
+    .pipe(webpcss({ webpClass: ".webp", noWebpClass: ".no-webp" }))
     .pipe(dest(path.build.css))
     .pipe(clean_css())
     .pipe(
@@ -139,6 +139,7 @@ gulp.task("svgSprite", function () {
         mode: {
           stack: {
             sprite: "../icons/icons.svg",
+            example: true,
           },
         },
       })
