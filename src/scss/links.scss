@@ -1,7 +1,7 @@
 .link {
-  font-size: 14px;
+  font-size: $default-fz*0.875;
   font-weight: 300;
-  color: #fff;
+  color: $default-text-color;
   text-decoration: none;
   transition: color 0.2s ease;
   position: relative;

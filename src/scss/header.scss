@@ -8,7 +8,7 @@
 
 .page-header {
   position: relative;
-  background: #222 url("../img/header-bg.png")top/cover no-repeat;
+  background: #222 url("../img/header-bg.png") top/cover no-repeat;
   background-blend-mode: overlay;
   height: 1024px;
   max-height: 100vh;
@@ -24,39 +24,47 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    input[type="radio"] {
+      display: none;
+    }
   }
 }
 
 .carousel {
   flex: 0 0 70%;
   position: relative;
-  input[type="radio"] {
-    display: none;
-  }
+  // input[type="radio"] {
+  //   display: none;
+  // }
   &__elem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     z-index: -1;
     width: 100%;
     height: 100%;
     position: absolute;
-    padding: 10% 20% 0;
+    padding: 0 15%;
     text-align: center;
   }
   &__content {
-    color: #fff;
+    color: $default-text-color;
   }
-  &__prev, &__next {
+  &__prev,
+  &__next {
     position: absolute;
     top: 50%;
     display: inline-block;
     width: 56px;
     height: 56px;
-    border: 3px solid rgba(255,255,255,0.5);
+    border: 3px solid rgba(255, 255, 255, 0.5);
     transition: all 0.2s ease;
     &:hover {
-      border-color:#c7b299;
+      border-color: #c7b299;
     }
     &:active {
-      border-color:rgba(199, 178, 153, 0.5);
+      border-color: rgba(199, 178, 153, 0.5);
     }
   }
   &__prev {
@@ -83,11 +91,11 @@
   }
 }
 
-#el1:checked ~ .carousel__elem--1,
-#el2:checked ~ .carousel__elem--2,
-#el3:checked ~ .carousel__elem--3,
-#el4:checked ~ .carousel__elem--4,
-#el5:checked ~ .carousel__elem--5 {
+#el1:checked ~ .carousel .carousel__elem--1,
+#el2:checked ~ .carousel .carousel__elem--2,
+#el3:checked ~ .carousel .carousel__elem--3,
+#el4:checked ~ .carousel .carousel__elem--4,
+#el5:checked ~ .carousel .carousel__elem--5 {
   z-index: 10;
   animation: fade 1s ease;
 }
@@ -106,39 +114,40 @@
   margin-bottom: 5%;
   &__dot {
     display: inline-block;
-    width: 11px;
-    height: 11px;
-    background-color: rgba(255,255,255,0.5);
+    width: $default-fz * 0.625;
+    height: $default-fz * 0.625;
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     margin: 0 5px;
+    transition: transform 0.5s ease;
     &:hover {
       background-color: #c7b299;
     }
     &:active {
-      background-color:rgba(199, 178, 153, 0.5);
+      background-color: rgba(199, 178, 153, 0.5);
     }
   }
 }
 
-// ! Исправить
-// #el1:checked ~ .carousel-dots #dot1,
-// #el2:checked ~ .carousel-dots #dot2,
-// #el3:checked ~ .carousel-dots #dot3,
-// #el4:checked ~ .carousel-dots #dot4,
-// #el5:checked ~ .carousel-dots #dot5 {
-//   transform: scale(1.5);
-//   background-color: transparent;
-//   border-radius: 50%;
-// }
+#el1:checked ~ .carousel-dots #dot1,
+#el2:checked ~ .carousel-dots #dot2,
+#el3:checked ~ .carousel-dots #dot3,
+#el4:checked ~ .carousel-dots #dot4,
+#el5:checked ~ .carousel-dots #dot5 {
+  transform: scale(1.5);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #d3c1ad;
+}
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-size: 34px;
+  font-size: $default-fz * 2.125;
   flex-grow: 1;
   font-weight: 400;
   display: flex;
   align-items: center;
-  color: #fff;
+  color: $default-text-color;
   text-decoration: none;
   &__img {
     width: 64px;
@@ -146,7 +155,7 @@
     margin-right: 2px;
   }
   &__text {
-    line-height: 56px;
+    line-height: $default-fz * 3.5;
   }
 }
 
@@ -157,9 +166,9 @@
     list-style: none;
     justify-content: space-between;
   }
-  li {  
+  li {
     margin: 0 10px 0 0;
-    &:last-child{
+    &:last-child {
       margin: 0;
     }
   }

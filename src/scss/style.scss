@@ -1,3 +1,11 @@
+// Default values
+$default-text-color: #fff;
+$second-text-color: #8c8c8c;
+$third-text-color: #555;
+$default-fz: 16px;
+$screen-width: 100vw;
+$screen-height: 100vh;
+
 @import "normalize";
 
 @import "fonts";
@@ -6,26 +14,16 @@
 
 @import "links";
 
-// Default values
-
-$default-text-color: #fff;
-$second-text-color: #8c8c8c;
-$third-text-color: #555;
-$default-fz: 16px;
-
-$screen-width: 100vw;
-$screen-height: 100vh;
-
 html {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  font-size: $default-fz;
 }
 
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  // max-width: 1920px;
   margin: 0 auto;
 }
 
@@ -50,22 +48,21 @@ a {
 h1 {
   margin: 0;
   font-family: "Raleway", sans-serif;
-  font-size: 52px;
+  font-size: $default-fz*3.25;
   line-height: 1.2;
   font-weight: 800;
-  color: #fff;
+  color: $default-text-color;
 }
 
 h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 36px;
+  font-size: $default-fz*2.125;
   line-height: 1.2;
   font-weight: 500;
-  color: #fff;
+  color: $default-text-color;
 }
 
 .container {
-  // width: calc(1230/1920*100%);
   max-width: 90%;
   height: 100%;
   margin: 0 calc(30% - 231px);

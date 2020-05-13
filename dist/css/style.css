@@ -554,6 +554,7 @@ template {
 html {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
+  font-size: 16px;
 }
 
 body {
@@ -598,7 +599,7 @@ h1 {
 
 h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 1.2;
   font-weight: 500;
   color: #fff;
@@ -665,6 +666,10 @@ h2 {
           justify-content: space-between;
 }
 
+.page-header__bottom input[type="radio"] {
+  display: none;
+}
+
 .carousel {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 70%;
@@ -672,16 +677,25 @@ h2 {
   position: relative;
 }
 
-.carousel input[type="radio"] {
-  display: none;
-}
-
 .carousel__elem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: -1;
   width: 100%;
   height: 100%;
   position: absolute;
-  padding: 10% 20% 0;
+  padding: 0 15%;
   text-align: center;
 }
 
@@ -748,11 +762,11 @@ h2 {
           flex: 0 0 auto;
 }
 
-#el1:checked ~ .carousel__elem--1,
-#el2:checked ~ .carousel__elem--2,
-#el3:checked ~ .carousel__elem--3,
-#el4:checked ~ .carousel__elem--4,
-#el5:checked ~ .carousel__elem--5 {
+#el1:checked ~ .carousel .carousel__elem--1,
+#el2:checked ~ .carousel .carousel__elem--2,
+#el3:checked ~ .carousel .carousel__elem--3,
+#el4:checked ~ .carousel .carousel__elem--4,
+#el5:checked ~ .carousel .carousel__elem--5 {
   z-index: 10;
   -webkit-animation: fade 1s ease;
           animation: fade 1s ease;
@@ -785,11 +799,16 @@ h2 {
 
 .carousel-dots__dot {
   display: inline-block;
-  width: 11px;
-  height: 11px;
+  width: 10px;
+  height: 10px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   margin: 0 5px;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  -o-transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
 .carousel-dots__dot:hover {
@@ -798,6 +817,19 @@ h2 {
 
 .carousel-dots__dot:active {
   background-color: rgba(199, 178, 153, 0.5);
+}
+
+#el1:checked ~ .carousel-dots #dot1,
+#el2:checked ~ .carousel-dots #dot2,
+#el3:checked ~ .carousel-dots #dot3,
+#el4:checked ~ .carousel-dots #dot4,
+#el5:checked ~ .carousel-dots #dot5 {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid #d3c1ad;
 }
 
 .logo {
