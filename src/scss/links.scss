@@ -16,7 +16,7 @@
     transition: all 0.05s ease;
   }
   &:focus {
-    outline: 3px solid #d1342f;
+    // set for every element in style.scss
   }
   &:hover {
     outline: none;
@@ -37,10 +37,28 @@
 }
 
 .btn {
+  position: relative;
+  display: inline-block;
+  font-size: $default-fz*0.875;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+  padding: 20px 38px;
+  background-color: #998675;
+  box-shadow: inset 0 -3px 0 #736357;
+  border-radius: 3px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
   &:focus {
+    // set for every element in style.scss
   }
   &:hover {
+    transform: scale(0.98);
+    box-shadow: inset 0 (-40px - $default-fz*0.875) 0 #736357;
   }
   &:active {
+    transform: scale(0.98);
+    color: $third-text-color;
   }
 }

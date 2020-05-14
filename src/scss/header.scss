@@ -33,9 +33,6 @@
 .carousel {
   flex: 0 0 70%;
   position: relative;
-  // input[type="radio"] {
-  //   display: none;
-  // }
   &__elem {
     display: flex;
     flex-direction: column;
@@ -50,6 +47,7 @@
   }
   &__content {
     color: $default-text-color;
+    margin-bottom: 50px;
   }
   &__prev,
   &__next {
