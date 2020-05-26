@@ -44,6 +44,11 @@
     position: absolute;
     padding: 0 15%;
     text-align: center;
+    @media screen and (max-width: 1200px) {
+      & {
+        padding: 0 7%;
+      }  
+    }
   }
   &__content {
     color: $default-text-color;
@@ -73,6 +78,14 @@
     &:hover {
       transform: translate(-150%, -50%) rotate(45deg) scale(1.2);
     }
+    @media screen and (max-width: 1200px) {
+      & {
+        transform: translate(-20%, -50%) rotate(45deg);
+        &:hover {
+          transform: translate(-20%, -50%) rotate(45deg) scale(1.2);
+        }
+      }
+    }
   }
   &__next {
     right: 0;
@@ -81,6 +94,14 @@
     border-bottom: none;
     &:hover {
       transform: translate(150%, -50%) rotate(45deg) scale(1.2);
+    }
+    @media screen and (max-width: 1200px) {
+      & {
+        transform: translate(20%, -50%) rotate(45deg);
+        &:hover {
+          transform: translate(20%, -50%) rotate(45deg) scale(1.2);
+        }
+      }
     }
   }
 

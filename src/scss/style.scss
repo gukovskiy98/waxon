@@ -72,6 +72,9 @@ h2 {
   max-width: 90%;
   height: 100%;
   margin: 0 calc(30% - 231px);
+  @media screen and (max-width: 1200px) {
+    max-width: 95%;
+  }
 }
 
 @import "header";

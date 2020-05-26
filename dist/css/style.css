@@ -939,4 +939,38 @@ h2 {
   margin-right: 30px;
 }
 
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 95%;
+  }
+
+  .carousel__elem {
+    padding: 0 7%;
+  }
+
+  .carousel__prev {
+    -webkit-transform: translate(-20%, -50%) rotate(45deg);
+        -ms-transform: translate(-20%, -50%) rotate(45deg);
+            transform: translate(-20%, -50%) rotate(45deg);
+  }
+
+  .carousel__prev:hover {
+    -webkit-transform: translate(-20%, -50%) rotate(45deg) scale(1.2);
+        -ms-transform: translate(-20%, -50%) rotate(45deg) scale(1.2);
+            transform: translate(-20%, -50%) rotate(45deg) scale(1.2);
+  }
+
+  .carousel__next {
+    -webkit-transform: translate(20%, -50%) rotate(45deg);
+        -ms-transform: translate(20%, -50%) rotate(45deg);
+            transform: translate(20%, -50%) rotate(45deg);
+  }
+
+  .carousel__next:hover {
+    -webkit-transform: translate(20%, -50%) rotate(45deg) scale(1.2);
+        -ms-transform: translate(20%, -50%) rotate(45deg) scale(1.2);
+            transform: translate(20%, -50%) rotate(45deg) scale(1.2);
+  }
+}
+
 .webp .page-header { background: #222 url(../img/header-bg.webp) top/cover no-repeat; }
