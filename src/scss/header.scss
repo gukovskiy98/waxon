@@ -33,6 +33,11 @@
 .carousel {
   flex: 0 0 70%;
   position: relative;
+  &__secondary-title {
+    font-size: $default-fz * 2.25;
+    font-weight: 500;
+    color: $default-text-color;
+  }
   &__elem {
     display: flex;
     flex-direction: column;
@@ -47,7 +52,7 @@
     @media screen and (max-width: 1200px) {
       & {
         padding: 0 7%;
-      }  
+      }
     }
   }
   &__content {
@@ -169,8 +174,7 @@
   color: $default-text-color;
   text-decoration: none;
   &__img {
-    width: 64px;
-    height: 56px;
+    font-size: $default-fz * 3;
     margin-right: 2px;
   }
   &__text {
@@ -197,13 +201,10 @@
 .cart-and-search {
   display: flex;
   justify-content: space-between;
-  &__img {
-    width: 24px;
-    height: 24px;
-  }
   &__cart {
-    margin-right: 30px;
+    margin-right: $default-fz*1.75;
   }
-  &__search {
+  a {
+    font-size: $default-fz * 1.5;
   }
 }

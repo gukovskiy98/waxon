@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "icon-font";
+  src: url("../fonts/icon-font.woff2") format("woff2"),
+    url("../fonts/icon-font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "icon-font";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bell:before {
+  content: "\61";
+} /* 'a' */
+.icon-cart:before {
+  content: "\62";
+} /* 'b' */
+.icon-clients:before {
+  content: "\63";
+} /* 'c' */
+.icon-coffee:before {
+  content: "\64";
+} /* 'd' */
+.icon-custom:before {
+  content: "\65";
+} /* 'e' */
+.icon-development:before {
+  content: "\66";
+} /* 'f' */
+.icon-heart:before {
+  content: "\67";
+} /* 'g' */
+.icon-marketing:before {
+  content: "\68";
+} /* 'h' */
+.icon-message:before {
+  content: "\69";
+} /* 'i' */
+.icon-pencil:before {
+  content: "\6a";
+} /* 'j' */
+.icon-play:before {
+  content: "\6b";
+} /* 'k' */
+.icon-search:before {
+  content: "\6c";
+} /* 'l' */
+.icon-logos:before {
+  content: "\6d";
+} /* 'm' */

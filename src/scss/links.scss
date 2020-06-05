@@ -36,6 +36,24 @@
   }
 }
 
+.icon-link {
+  color: $default-text-color;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  position: relative;
+  &:focus {
+    // set for every element in style.scss
+  }
+  &:hover {
+    outline: none;
+    color: #c7b299;
+  }
+  &:active {
+    outline: none;
+    color: rgba(199, 178, 153, 0.5);
+  }
+}
+
 .btn {
   position: relative;
   display: inline-block;
