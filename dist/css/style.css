@@ -452,8 +452,8 @@ template {
   font-style: normal;
 }
 
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
   font-family: "icon-font";
   font-style: normal;
   font-weight: normal;
@@ -650,6 +650,7 @@ html {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-size: 16px;
+  line-height: 1.2;
   color: #fff;
 }
 
@@ -1015,8 +1016,12 @@ h3 {
 }
 
 .container--services {
-  margin-top: 80px;
-  margin-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.container--ideas {
+  padding-top: 80px;
 }
 
 .services__list {
@@ -1081,6 +1086,96 @@ h3 {
   line-height: 24px;
   letter-spacing: -0.5px;
   margin-bottom: 30px;
+}
+
+.ideas {
+  background: #fbfaf8;
+}
+
+.ideas__title {
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.ideas__content {
+  margin: 0 auto 40px;
+  text-align: center;
+  line-height: 1.75;
+  max-width: 800px;
+  color: #8c8c8c;
+  text-align: center;
+}
+
+.ideas__images {
+  position: relative;
+  height: calc(482 / 1230 * (40vw + 462px));
+  max-height: 482px;
+}
+
+.ideas__image {
+  position: absolute;
+  width: calc(770 / 1230 * 100%);
+  max-width: 770px;
+}
+
+.ideas__image--left {
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.ideas__image--center {
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+}
+
+.ideas__image--right {
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.theme-offer {
+  width: 100%;
+  height: calc(150 / 1920 * 100vw);
+  max-height: 150px;
+  background: -webkit-gradient(linear, left top, right top, from(#211b19), to(#4e3427)) #f4f5f8;
+  background: -o-linear-gradient(left, #211b19 0%, #4e3427 100%) #f4f5f8;
+  background: linear-gradient(to right, #211b19 0%, #4e3427 100%) #f4f5f8;
+}
+
+.theme-offer__wrapper {
+  padding: 0 30px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.theme-offer__content {
+  color: #615855;
+  font-size: 18px;
+}
+
+.theme-offer__title {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.theme-offer__waxom {
+  color: #c7b299;
 }
 
 @media screen and (max-width: 1200px) {
