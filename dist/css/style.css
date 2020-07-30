@@ -629,6 +629,13 @@ template {
   -o-transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
   transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
   transition: transform 0.2s ease, box-shadow 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease, -webkit-box-shadow 0.2s ease;
+  color: #fff;
+  border: none;
+}
+
+.btn:focus {
+  outline: 3px solid rgba(115, 99, 87, 0.5);
+  outline-offset: 2px;
 }
 
 .btn:hover {
@@ -697,6 +704,7 @@ h1 {
   line-height: 1.2;
   font-weight: 800;
   color: #fff;
+  text-align: center;
 }
 
 h2 {
@@ -705,6 +713,7 @@ h2 {
   line-height: 1.2;
   font-weight: 600;
   color: #555;
+  text-align: center;
 }
 
 h3 {
@@ -1024,6 +1033,11 @@ h3 {
   padding-top: 80px;
 }
 
+.container--projects {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
 .services__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1094,7 +1108,6 @@ h3 {
 
 .ideas__title {
   margin: 0 auto 20px;
-  text-align: center;
 }
 
 .ideas__content {
@@ -1176,6 +1189,141 @@ h3 {
 
 .theme-offer__waxom {
   color: #c7b299;
+}
+
+.projects__title {
+  margin: 0 auto 20px;
+}
+
+.projects__btn {
+  display: block;
+  margin: auto;
+}
+
+.projects__content {
+  margin: 0 auto 40px;
+  text-align: center;
+  line-height: 1.75;
+  max-width: 800px;
+  color: #8c8c8c;
+  text-align: center;
+}
+
+.projects__buttons {
+  margin: 0 auto 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects__buttons input[type="radio"] {
+  display: none;
+}
+
+.projects__buttons input[type="radio"]:checked + label {
+  background-color: #998675;
+  color: #fff;
+}
+
+.projects__buttons label {
+  font-size: 14px;
+  line-height: 21px;
+  color: #8c8c8c;
+  padding: 10px 25px;
+  border: 1px solid #ebebeb;
+  border-radius: 3px;
+  margin: 0 5px;
+  -webkit-transition: all 0.1s ease;
+  -o-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+.projects__buttons label:hover {
+  background-color: #d1d1d1;
+}
+
+.projects__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects__card {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 370px;
+          flex: 0 0 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fbfaf8;
+  margin: 0 15px 30px;
+}
+
+.projects__card:hover {
+  background-color: #362f2d;
+}
+
+.projects__card:hover .projects__card-title {
+  color: #fff;
+}
+
+.projects__card:hover .projects__card-tags {
+  color: #c7b299;
+}
+
+.projects__card:hover img {
+  -webkit-filter: brightness(0.3);
+          filter: brightness(0.3);
+}
+
+.projects__card img {
+  margin-bottom: 30px;
+  -webkit-transition: -webkit-filter 0.2s ease;
+  transition: -webkit-filter 0.2s ease;
+  -o-transition: filter 0.2s ease;
+  transition: filter 0.2s ease;
+  transition: filter 0.2s ease, -webkit-filter 0.2s ease;
+}
+
+.projects__card-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #c7b299;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.projects__card-tags {
+  font-size: 14px;
+  line-height: 20px;
+  color: #d1d1d1;
+  margin-left: 30px;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 1200px) {

@@ -6,6 +6,10 @@
   &--ideas {
     padding-top: 80px;
   }
+  &--projects {
+    padding-top: 80px;
+    padding-bottom: 100px;
+  }
 }
 .services {
   &__list {
@@ -61,7 +65,6 @@
   background: #fbfaf8;
   &__title {
     margin: 0 auto 20px;
-    text-align: center;
   }
   &__content {
     margin: 0 auto 40px;
@@ -80,7 +83,7 @@
     position: absolute;
     width: calc(770 / 1230 * 100%);
     max-width: 770px;
-    &--left {      
+    &--left {
       bottom: 0;
       left: 0;
       z-index: 0;
@@ -113,15 +116,106 @@
   }
   &__content {
     color: #615855;
-    font-size: $default-fz*1.125;
+    font-size: $default-fz * 1.125;
   }
   &__title {
     color: #ffffff;
     font-family: "Raleway", sans-serif;
-    font-size: $default-fz*1.75;
+    font-size: $default-fz * 1.75;
     font-weight: 400;
   }
   &__waxom {
     color: #c7b299;
+  }
+}
+
+.projects {
+  &__title {
+    margin: 0 auto 20px;
+  }
+  &__btn {
+    display: block;
+    margin: auto;
+  }
+  &__content {
+    margin: 0 auto 40px;
+    text-align: center;
+    line-height: 1.75;
+    max-width: 800px;
+    color: $second-text-color;
+    text-align: center;
+  }
+  &__buttons {
+    margin: 0 auto 40px;
+    display: flex;
+    justify-content: center;
+    input[type="radio"] {
+      display: none;
+      &:checked + label {
+        background-color: #998675;
+        color: $default-text-color;
+      }
+    }
+    label {
+      font-size: $default-fz * 0.875;
+      line-height: $default-fz * 21/16;
+      color: $second-text-color;
+      padding: 10px 25px;
+      border: 1px solid #ebebeb;
+      border-radius: 3px;
+      margin: 0 5px;
+      transition: all 0.1s ease;
+      cursor: pointer;
+      &:hover {
+        background-color: #d1d1d1;
+      }
+    }
+  }
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__card {
+    &:hover {
+      background-color: #362f2d;
+      .projects__card-title {
+        color: $default-text-color;
+      }
+      .projects__card-tags {
+        color: #c7b299;
+      }
+      img {
+        filter: brightness(0.3);
+      }
+    }
+    transition: all 0.2s ease;
+    flex: 0 0 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    background-color: #fbfaf8;
+    margin: 0 15px 30px;
+    img {
+      margin-bottom: 30px;
+      transition: filter 0.2s ease;
+    }
+    &-title {
+      font-family: "Raleway", sans-serif;
+      font-size: $default-fz * 1.25;
+      font-weight: 500;
+      color: #c7b299;
+      margin-left: 30px;
+      margin-bottom: 10px;
+    }
+    &-tags {
+      font-size: $default-fz * 0.875;
+      line-height: $default-fz * 1.25;
+      color: #d1d1d1;
+      margin-left: 30px;
+      margin-bottom: 15px;
+    }
   }
 }
