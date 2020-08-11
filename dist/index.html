@@ -1,267 +1,1 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.min.css" />
-    <title>Waxom</title>
-  </head>
-  <body>
-    <!-- ! gulp-webp-html падает, если тег img содержит переводы строки, следовательно нужно убирать все пробелы в img тегах -->
-    <header class="page-header">
-  <div class="container container--page-header">
-    <div class="page-header__top">
-      <a href="#" class="logo icon-link">
-        <span class="logo__img icon-logos"></span>
-        <span class="logo__text">
-          Waxom
-        </span>
-      </a>
-      <nav class="page-nav">
-        <ul>
-          <li><a class="link" href="#link1" target="_blank">Home</a></li>
-          <li><a class="link" href="#link2" target="_blank">About Us</a></li>
-          <li><a class="link" href="#link3" target="_blank">Portfolio</a></li>
-          <li><a class="link" href="#link4" target="_blank">Features</a></li>
-          <li><a class="link" href="#link5" target="_blank">Blog</a></li>
-          <li><a class="link" href="#link6" target="_blank">Pricing</a></li>
-          <li><a class="link" href="#link7" target="_blank">Shortcodes</a></li>
-          <li><a class="link" href="#link8" target="_blank">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="cart-and-search">
-        <a href="#cart" class="cart-and-search__cart icon-link">
-          <span class="icon-cart"></span>
-        </a>
-        <a href="#search" class="cart-and-search__search icon-link">
-          <span class="icon-search"></span>
-        </a>
-      </div>
-    </div>
-    <div class="page-header__bottom">
-      <input type="radio" id="el1" name="carousel-content" checked />
-      <input type="radio" id="el2" name="carousel-content" />
-      <input type="radio" id="el3" name="carousel-content" />
-      <input type="radio" id="el4" name="carousel-content" />
-      <input type="radio" id="el5" name="carousel-content" />
-
-      <div class="carousel">
-
-        <div class="carousel__elem carousel__elem--1">
-          <label for="el5" class="carousel__prev"></label>
-          <label for="el2" class="carousel__next"></label>
-          <h2 class="carousel__secondary-title">Unique and Modern Design</h2>
-          <h1>Portfolio PSD Template</h1>
-          <p class="carousel__content">
-            Nam liber tempor cum soluta nobis eleifend option congue nihil
-            imperdiet doming id quod mazim placerat facer possim assum.
-          </p>
-          <a href="#" class="btn" target="_blank">Get Started</a>
-        </div>
-
-        <div class="carousel__elem carousel__elem--2">
-          <label for="el1" class="carousel__prev"></label>
-          <label for="el3" class="carousel__next"></label>
-          <h2 class="carousel__secondary-title">Lorem ipsum dolor sit amet.</h2>
-          <h1>Lorem, ipsum dolor.</h1>
-          <p class="carousel__content">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Praesentium earum repudiandae distinctio minus omnis provident
-            voluptatum accusamus nisi repellat delectus.
-          </p>
-        </div>
-
-        <div class="carousel__elem carousel__elem--3">
-          <label for="el2" class="carousel__prev"></label>
-          <label for="el4" class="carousel__next"></label>
-          <h2 class="carousel__secondary-title">Lorem ipsum.</h2>
-          <h1>Lorem ipsum dolor sit amet.</h1>
-          <p class="carousel__content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-            reprehenderit ratione, laborum ad explicabo facere quae unde aliquid
-            repellendus praesentium veniam amet, omnis, similique magnam vitae
-            repudiandae nostrum error exercitationem.
-          </p>
-        </div>
-
-        <div class="carousel__elem carousel__elem--4">
-          <label for="el3" class="carousel__prev"></label>
-          <label for="el5" class="carousel__next"></label>
-          <h2 class="carousel__secondary-title">Lorem ipsum dolor sit.</h2>
-          <h1>Lorem, ipsum.</h1>
-          <p class="carousel__content">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut dicta
-            voluptatum soluta ad, quisquam nostrum.
-          </p>
-        </div>
-
-        <div class="carousel__elem carousel__elem--5">
-          <label for="el4" class="carousel__prev"></label>
-          <label for="el1" class="carousel__next"></label>
-          <h2 class="carousel__secondary-title">Lorem ipsum dolor sit amet consectetur.</h2>
-          <h1>Lorem ipsum dolor sit amet.</h1>
-          <p class="carousel__content">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut,
-            asperiores.
-          </p>
-        </div>
-      </div>
-      <div class="carousel-dots">
-        <label for="el1" id="dot1" class="carousel-dots__dot"></label>
-        <label for="el2" id="dot2" class="carousel-dots__dot"></label>
-        <label for="el3" id="dot3" class="carousel-dots__dot"></label>
-        <label for="el4" id="dot4" class="carousel-dots__dot"></label>
-        <label for="el5" id="dot5" class="carousel-dots__dot"></label>
-      </div>
-    </div>
-  </div>
-</header>
-
-    <main class="page-main">
-  <section class="services">
-  <div class="container container--services">
-    <ul class="services__list">
-      <li class="services__element">
-        <span class="icon-pencil services__icon"></span>
-        <h3 class="services__title">Web &#38; App Design</h3>
-        <p class="services__content">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-      </li>
-      <li class="services__element">
-        <span class="icon-development services__icon"></span>
-        <h3 class="services__title">Development</h3>
-        <p class="services__content">Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-      </li>
-      <li class="services__element">
-        <span class="icon-custom services__icon"></span>
-        <h3 class="services__title">Customization</h3>
-        <p class="services__content">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-      </li>
-      <li class="services__element">
-        <span class="icon-marketing services__icon"></span>
-        <h3 class="services__title">Marketing</h3>
-        <p class="services__content">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-      </li>
-    </ul>
-  </div>
-</section>
-  <section class="ideas">
-  <div class="container container--ideas">
-    <h2 class="ideas__title">Waxom is Realization of your Ideas.</h2>
-    <p class="ideas__content">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-    <div class="ideas__images">
-      <picture><source srcset="img/browser-left.webp" type="image/webp"><img class="ideas__image ideas__image--left" src="img/browser-left.png" alt="demo image 1"></picture>
-      <picture><source srcset="img/browser-center.webp" type="image/webp"><img class="ideas__image ideas__image--center" src="img/browser-center.png" alt="demo image 2"></picture>
-      <picture><source srcset="img/browser-right.webp" type="image/webp"><img class="ideas__image ideas__image--right" src="img/browser-right.png" alt="demo image 3"></picture>
-    </div>
-  </div>
-</section>
-  <section class="theme-offer">
-  <div class="container container--theme-offer">
-    <div class="theme-offer__wrapper">
-      <div class="theme-offer__content">
-        <h2 class="theme-offer__title"><span class="theme-offer__waxom">Waxom</span> Multipurpose WordPress Theme</h2>
-        <p>Don't Forget to Rate the Template. Thanks so much!</p>
-      </div>
-      <a href="#" class="btn" target="_blank">Purchase now</a>
-    </div>
-  </div>
-</section>
-  <section class="projects">
-  <div class="container container--projects">
-    <h2 class="projects__title">Our Latest Projects.</h2>
-    <p class="projects__content">
-      Investigationes demonstraverunt lectores legere me lius quod ii legunt
-      saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem
-      consuetudium.
-    </p>
-    <div class="projects__wrapper">
-      <div class="projects__buttons">
-        <input type="radio" name="project-type" id="pr1" checked />
-        <label for="pr1">All</label>
-        <input type="radio" name="project-type" id="pr2" />
-        <label for="pr2">Web Design</label>
-        <input type="radio" name="project-type" id="pr3" />
-        <label for="pr3">Mobile App</label>
-        <input type="radio" name="project-type" id="pr4" />
-        <label for="pr4">Illustration</label>
-        <input type="radio" name="project-type" id="pr5" />
-        <label for="pr5">Photography</label>
-      </div>
-      <div class="projects__cards">
-        <div class="projects__card" id="card1" data-category="Mobile App">
-          <figure>
-            <picture><source srcset="img/pr1.webp" type="image/webp"><img src="img/pr1.png" alt="Project 1 image" data-image-src="img/pr1.png" /></picture>
-            <figcaption>
-              <h4 class="projects__card-title">Claritas Etiam Processus</h4>
-              <p class="projects__card-tags">Photography, Nature</p>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="projects__card" id="card2" data-category="Web Design">
-          <figure>
-            <picture><source srcset="img/pr2.webp" type="image/webp"><img src="img/pr2.png" alt="Project 2 image" data-image-src="img/pr2.png" /></picture>
-            <figcaption>
-              <h4 class="projects__card-title">Quam Nutamus Farum</h4>
-              <p class="projects__card-tags">Photography, Nature</p>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="projects__card" id="card3" data-category="Web Design">
-          <figure>
-            <picture><source srcset="img/pr3.webp" type="image/webp"><img src="img/pr3.png" alt="Project 3 image" data-image-src="img/pr3.png" /></picture>
-            <figcaption>
-              <h4 class="projects__card-title">Usus Legentis Videntur</h4>
-              <p class="projects__card-tags">Photography, Nature</p>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="projects__card" id="card4" data-category="Photography">
-          <figure>
-            <picture><source srcset="img/pr4.webp" type="image/webp"><img src="img/pr4.png" alt="Project 4 image" data-image-src="img/pr4.png" /></picture>
-            <figcaption>
-              <h4 class="projects__card-title">Claritas Etiam Processus</h4>
-              <p class="projects__card-tags">Photography, Nature</p>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="projects__card" id="card5" data-category="Illustration">
-          <figure>
-            <picture><source srcset="img/pr5.webp" type="image/webp"><img src="img/pr5.png" alt="Project 5 image" data-image-src="img/pr5.png" /></picture>
-            <figcaption>
-              <h4 class="projects__card-title">Quam Nutamus Farum</h4>
-              <p class="projects__card-tags">Photography, Nature</p>
-            </figcaption>
-          </figure>
-        </div>
-        <div class="projects__card" id="card6" data-category="Photography">
-          <figure>
-            <picture><source srcset="img/pr6.webp" type="image/webp"><img src="img/pr6.png" alt="Project 6 image" data-image-src="img/pr6.png" /></picture>
-            <figcaption>
-              <h4 class="projects__card-title">Usus Legentis Videntur</h4>
-              <p class="projects__card-tags">Photography, Nature</p>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-      <button type="button" id="loadmore" class="btn projects__btn">Load more</button>
-    </div>
-  </div>
-</section>
-
-  <section class="video">
-  <div class="container container--video">
-    <div class="video__wrapper">
-      <div id="video-play" class="video__button">
-        <span class="video__play-icon">k</span>
-      </div>
-      <h2 class="video__title">Waxom Video Presentation</h2>
-      <p class="video__description">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
-      <span class="video__duration">03:26</span>
-    </div>
-  </div>
-</section>
-</main>
-    
-    <script src="js/script.min.js"></script>
-  </body>
-</html>
+<!DOCTYPE html><html lang="en">  <head>    <meta charset="UTF-8" />    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    <link rel="stylesheet" href="css/style.min.css" />    <title>Waxom</title>  </head>  <body>    <!-- ! gulp-webp-html падает, если тег img содержит переводы строки, следовательно нужно убирать все пробелы в img тегах -->    <header class="page-header">  <div class="container container--page-header">    <div class="page-header__top">      <a href="#" class="logo icon-link">        <span class="logo__img icon-logos"></span>        <span class="logo__text">          Waxom        </span>      </a>      <nav class="page-nav">        <ul>          <li><a class="link" href="#link1" target="_blank">Home</a></li>          <li><a class="link" href="#link2" target="_blank">About Us</a></li>          <li><a class="link" href="#link3" target="_blank">Portfolio</a></li>          <li><a class="link" href="#link4" target="_blank">Features</a></li>          <li><a class="link" href="#link5" target="_blank">Blog</a></li>          <li><a class="link" href="#link6" target="_blank">Pricing</a></li>          <li><a class="link" href="#link7" target="_blank">Shortcodes</a></li>          <li><a class="link" href="#link8" target="_blank">Contact</a></li>        </ul>      </nav>      <div class="cart-and-search">        <a href="#cart" class="cart-and-search__cart icon-link">          <span class="icon-cart"></span>        </a>        <a href="#search" class="cart-and-search__search icon-link">          <span class="icon-search"></span>        </a>      </div>    </div>    <div class="page-header__bottom">      <input type="radio" id="el1" name="carousel-content" checked />      <input type="radio" id="el2" name="carousel-content" />      <input type="radio" id="el3" name="carousel-content" />      <input type="radio" id="el4" name="carousel-content" />      <input type="radio" id="el5" name="carousel-content" />      <div class="carousel">        <div class="carousel__elem carousel__elem--1">          <label for="el5" class="carousel__prev"></label>          <label for="el2" class="carousel__next"></label>          <h2 class="carousel__secondary-title">Unique and Modern Design</h2>          <h1>Portfolio PSD Template</h1>          <p class="carousel__content">            Nam liber tempor cum soluta nobis eleifend option congue nihil            imperdiet doming id quod mazim placerat facer possim assum.          </p>          <a href="#" class="btn" target="_blank">Get Started</a>        </div>        <div class="carousel__elem carousel__elem--2">          <label for="el1" class="carousel__prev"></label>          <label for="el3" class="carousel__next"></label>          <h2 class="carousel__secondary-title">Lorem ipsum dolor sit amet.</h2>          <h1>Lorem, ipsum dolor.</h1>          <p class="carousel__content">            Lorem ipsum, dolor sit amet consectetur adipisicing elit.            Praesentium earum repudiandae distinctio minus omnis provident            voluptatum accusamus nisi repellat delectus.          </p>        </div>        <div class="carousel__elem carousel__elem--3">          <label for="el2" class="carousel__prev"></label>          <label for="el4" class="carousel__next"></label>          <h2 class="carousel__secondary-title">Lorem ipsum.</h2>          <h1>Lorem ipsum dolor sit amet.</h1>          <p class="carousel__content">            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure            reprehenderit ratione, laborum ad explicabo facere quae unde aliquid            repellendus praesentium veniam amet, omnis, similique magnam vitae            repudiandae nostrum error exercitationem.          </p>        </div>        <div class="carousel__elem carousel__elem--4">          <label for="el3" class="carousel__prev"></label>          <label for="el5" class="carousel__next"></label>          <h2 class="carousel__secondary-title">Lorem ipsum dolor sit.</h2>          <h1>Lorem, ipsum.</h1>          <p class="carousel__content">            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut dicta            voluptatum soluta ad, quisquam nostrum.          </p>        </div>        <div class="carousel__elem carousel__elem--5">          <label for="el4" class="carousel__prev"></label>          <label for="el1" class="carousel__next"></label>          <h2 class="carousel__secondary-title">Lorem ipsum dolor sit amet consectetur.</h2>          <h1>Lorem ipsum dolor sit amet.</h1>          <p class="carousel__content">            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut,            asperiores.          </p>        </div>      </div>      <div class="carousel-dots">        <label for="el1" id="dot1" class="carousel-dots__dot"></label>        <label for="el2" id="dot2" class="carousel-dots__dot"></label>        <label for="el3" id="dot3" class="carousel-dots__dot"></label>        <label for="el4" id="dot4" class="carousel-dots__dot"></label>        <label for="el5" id="dot5" class="carousel-dots__dot"></label>      </div>    </div>  </div></header>    <main class="page-main">  <section class="services">  <div class="container container--services">    <ul class="services__list">      <li class="services__element">        <span class="icon-pencil services__icon"></span>        <h3 class="services__title">Web &#38; App Design</h3>        <p class="services__content">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>      </li>      <li class="services__element">        <span class="icon-development services__icon"></span>        <h3 class="services__title">Development</h3>        <p class="services__content">Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>      </li>      <li class="services__element">        <span class="icon-custom services__icon"></span>        <h3 class="services__title">Customization</h3>        <p class="services__content">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>      </li>      <li class="services__element">        <span class="icon-marketing services__icon"></span>        <h3 class="services__title">Marketing</h3>        <p class="services__content">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>      </li>    </ul>  </div></section>  <section class="ideas">  <div class="container container--ideas">    <h2 class="ideas__title">Waxom is Realization of your Ideas.</h2>    <p class="ideas__content">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>    <div class="ideas__images">      <picture><source srcset="img/browser-left.webp" type="image/webp"><img class="ideas__image ideas__image--left" src="img/browser-left.png" alt="demo image 1"></picture>      <picture><source srcset="img/browser-center.webp" type="image/webp"><img class="ideas__image ideas__image--center" src="img/browser-center.png" alt="demo image 2"></picture>      <picture><source srcset="img/browser-right.webp" type="image/webp"><img class="ideas__image ideas__image--right" src="img/browser-right.png" alt="demo image 3"></picture>    </div>  </div></section>  <section class="theme-offer">  <div class="container container--theme-offer">    <div class="theme-offer__wrapper">      <div class="theme-offer__content">        <h2 class="theme-offer__title"><span class="theme-offer__waxom">Waxom</span> Multipurpose WordPress Theme</h2>        <p>Don't Forget to Rate the Template. Thanks so much!</p>      </div>      <a href="#" class="btn" target="_blank">Purchase now</a>    </div>  </div></section>  <section class="projects">  <div class="container container--projects">    <h2 class="projects__title">Our Latest Projects.</h2>    <p class="projects__content">      Investigationes demonstraverunt lectores legere me lius quod ii legunt      saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem      consuetudium.    </p>    <div class="projects__wrapper">      <div class="projects__buttons">        <input type="radio" name="project-type" id="pr1" checked />        <label for="pr1">All</label>        <input type="radio" name="project-type" id="pr2" />        <label for="pr2">Web Design</label>        <input type="radio" name="project-type" id="pr3" />        <label for="pr3">Mobile App</label>        <input type="radio" name="project-type" id="pr4" />        <label for="pr4">Illustration</label>        <input type="radio" name="project-type" id="pr5" />        <label for="pr5">Photography</label>      </div>      <div class="projects__cards">        <div class="projects__card" id="card1" data-category="Mobile App">          <figure>            <picture><source srcset="img/pr1.webp" type="image/webp"><img src="img/pr1.png" alt="Project 1 image" data-image-src="img/pr1.png" /></picture>            <figcaption>              <h4 class="projects__card-title">Claritas Etiam Processus</h4>              <p class="projects__card-tags">Photography, Nature</p>            </figcaption>          </figure>        </div>        <div class="projects__card" id="card2" data-category="Web Design">          <figure>            <picture><source srcset="img/pr2.webp" type="image/webp"><img src="img/pr2.png" alt="Project 2 image" data-image-src="img/pr2.png" /></picture>            <figcaption>              <h4 class="projects__card-title">Quam Nutamus Farum</h4>              <p class="projects__card-tags">Photography, Nature</p>            </figcaption>          </figure>        </div>        <div class="projects__card" id="card3" data-category="Web Design">          <figure>            <picture><source srcset="img/pr3.webp" type="image/webp"><img src="img/pr3.png" alt="Project 3 image" data-image-src="img/pr3.png" /></picture>            <figcaption>              <h4 class="projects__card-title">Usus Legentis Videntur</h4>              <p class="projects__card-tags">Photography, Nature</p>            </figcaption>          </figure>        </div>        <div class="projects__card" id="card4" data-category="Photography">          <figure>            <picture><source srcset="img/pr4.webp" type="image/webp"><img src="img/pr4.png" alt="Project 4 image" data-image-src="img/pr4.png" /></picture>            <figcaption>              <h4 class="projects__card-title">Claritas Etiam Processus</h4>              <p class="projects__card-tags">Photography, Nature</p>            </figcaption>          </figure>        </div>        <div class="projects__card" id="card5" data-category="Illustration">          <figure>            <picture><source srcset="img/pr5.webp" type="image/webp"><img src="img/pr5.png" alt="Project 5 image" data-image-src="img/pr5.png" /></picture>            <figcaption>              <h4 class="projects__card-title">Quam Nutamus Farum</h4>              <p class="projects__card-tags">Photography, Nature</p>            </figcaption>          </figure>        </div>        <div class="projects__card" id="card6" data-category="Photography">          <figure>            <picture><source srcset="img/pr6.webp" type="image/webp"><img src="img/pr6.png" alt="Project 6 image" data-image-src="img/pr6.png" /></picture>            <figcaption>              <h4 class="projects__card-title">Usus Legentis Videntur</h4>              <p class="projects__card-tags">Photography, Nature</p>            </figcaption>          </figure>        </div>      </div>      <button type="button" id="loadmore" class="btn projects__btn">Load more</button>    </div>  </div></section>  <section class="video">  <div class="container container--video">    <div class="video__wrapper">      <div id="video-play" class="video__button">        <span class="video__play-icon">k</span>      </div>      <h2 class="video__title">Waxom Video Presentation</h2>      <p class="video__description">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>      <span class="video__duration">03:26</span>    </div>  </div></section></main>        <script src="js/script.min.js"></script>  </body></html>
