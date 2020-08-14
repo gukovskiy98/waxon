@@ -1038,6 +1038,16 @@ h3 {
   padding-bottom: 100px;
 }
 
+.container--mobile {
+  padding-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .services__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1397,6 +1407,55 @@ h3 {
   font-size: 14px;
   color: #c7b299;
   font-weight: 400;
+}
+
+.mobile__left-block {
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+
+.mobile__right-block {
+  margin-left: 30px;
+}
+
+.mobile__title {
+  margin-top: 110px;
+  margin-bottom: 35px;
+  text-align: left;
+}
+
+.mobile__description {
+  line-height: 1.75;
+  color: #8c8c8c;
+  margin-bottom: 40px;
+}
+
+.mobile__list {
+  line-height: 2;
+  color: #8c8c8c;
+  list-style-type: none;
+  margin-left: 100px;
+}
+
+.mobile__list li {
+  position: relative;
+}
+
+.mobile__list li::before {
+  font-family: "Raleway", sans-serif;
+  position: absolute;
+  left: -50px;
+  top: 6px;
+  content: '>';
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #c7b299;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  line-height: 0.875;
 }
 
 @media screen and (max-width: 1200px) {
