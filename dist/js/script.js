@@ -66,12 +66,12 @@ loadMore.addEventListener("click", loadMoreHandler);
 // ----------------------------------------
 
 // Вставка видео при нажатии
-const youtubeVideoCode = "qYgIhOfjJGk"
+const youtubeVideoCode = "OEUqa_1w08I";
 let videoFrame = `<iframe width="100%" height="100%" src=https://www.youtube.com/embed/${youtubeVideoCode}?autoplay=1 frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
-let videoSection = document.querySelector('.video');
-let videoPlay = videoSection.querySelector('#video-play');
+let videoSection = document.querySelector(".video");
+let videoPlay = videoSection.querySelector("#video-play");
 videoPlay.onclick = () => {
   videoSection.style.backgroundColor = "#000";
   videoSection.innerHTML = videoFrame;
-}
+};
 // ----------------------------------------
