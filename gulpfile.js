@@ -77,6 +77,7 @@ function css() {
       autoprefixer({
         overrideBrowserslist: ["last 5 versions"],
         cascade: true,
+        grid: true
       })
     )
     .pipe(webpcss({ webpClass: ".webp", noWebpClass: ".no-webp" }))
