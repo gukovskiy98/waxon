@@ -39,13 +39,13 @@ let { src, dest } = require("gulp"),
   clean_css = require("gulp-clean-css"),
   rename = require("gulp-rename"),
   uglify = require("gulp-uglify-es").default,
-  imagemin = require("gulp-imagemin"),
   webp = require("gulp-webp"),
   webphtml = require("gulp-webp-html"),
   webpcss = require("gulp-webpcss"),
   svgSprite = require("gulp-svg-sprite"),
   ttf2woff = require("gulp-ttf2woff"),
-  ttf2woff2 = require("gulp-ttf2woff2");
+  ttf2woff2 = require("gulp-ttf2woff2"),
+  tinify = require("gulp-tinify");
 
 function browserSync(params) {
   browsersync.init({
@@ -115,14 +115,7 @@ function images() {
     )
     .pipe(dest(path.build.img))
     .pipe(src(path.src.img))
-    .pipe(
-      imagemin({
-        progressive: true,
-        svgoPlugins: [{ removeViewBox: false }],
-        interlaced: true,
-        optimizationLevel: 3,
-      })
-    )
+    .pipe(tinify('2LC9tnWf2sDVj2hHtD3TD5Ftt8xr39pH'))
     .pipe(dest(path.build.img))
     .pipe(browsersync.stream());
 }
